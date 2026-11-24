@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili 移除遮罩 (No Mask Panel)",
+  "version": "1.0.0",
+  "description": "移除 Bilibili 播放頁的 mask-panel 遮罩元素,讓你擁有完整的觀看體驗。",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.bilibili.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
