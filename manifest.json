@@ -1,12 +1,21 @@
 {
   "manifest_version": 3,
   "name": "Bilibili 移除遮罩 (No Mask Panel)",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "移除 Bilibili 播放頁的 mask-panel 遮罩元素,讓你擁有完整的觀看體驗。",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bilibili-no-mask@jason7906.github.io",
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
   },
   "content_scripts": [
     {
